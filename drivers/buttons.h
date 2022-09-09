@@ -26,4 +26,10 @@ void buttons_init();
 // returned value. bit3 = BTN3, bit2 = BTN2, bit1 = BTN1, bit0 = BTN0.
 uint8_t buttons_read();
 
+//helper function to return the value of the buttons register
+uint32_t readRegister(uint32_t offset);
+
+//helper function to write to the buttons register
+void writeRegister(uint32_t offset, uint32_t value);
+
 #endif /* BUTTONS */
